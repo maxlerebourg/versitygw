@@ -90,13 +90,18 @@ under the License.
 
   <div class="relative flex h-screen overflow-hidden">
     <input id="sidebar-toggle" name="panel" type="checkbox" class="peer hidden"/>
-    <label for="sidebar-toggle" class="sm:hidden rounded-full peer-checked:rotate-180 absolute z-20 top-4 left-6 flex justify-center items-center p-2 text-white/70 hover:text-white bg-charcoal-100 hover:bg-charcoal-200 transition-all">
+    <label for="sidebar-toggle" class="
+      sm:hidden rotate-180 peer-checked:rotate-0 absolute z-20 top-[14px] left-6
+      flex justify-center items-center p-2 rounded-lg transition-all
+      text-white/70 hover:text-white peer-checked:text-charcoal-300 peer-checked:hover:text-charcoal
+      hover:bg-white/10 peer-checked:hover:bg-gray-100
+    ">
       <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="-0.5 0 25 25">
         <path stroke-width="3" stroke-linecap="round" stroke-linejoin="round" d="M7.6728 22L16.1434 13.0294C16.4081 12.75 16.4081 12.3088 16.1434 12.0147L7.65808 3" />
       </svg>  
     </label>
     <!-- Sidebar -->
-    <aside class="absolute z-10 sm:static peer-checked:-ml-60 ml-0 sm:!ml-0 w-60 bg-charcoal flex flex-col flex-shrink-0 overflow-auto transition-all">
+    <aside class="absolute z-10 sm:static peer-checked:-translate-x-60 translate-x-0 sm:!translate-x-0 w-60 h-screen bg-charcoal flex flex-col overflow-auto transition-all">
       <div class="ml-12 sm:ml-0 h-16 flex-shrink-0 flex items-center px-6 border-b border-white/10">
         <a href="https://www.versity.com" target="_blank" rel="noopener noreferrer">
           <img src="assets/images/Versity-logo-white-horizontal.png" alt="Versity" class="h-10 hover:opacity-80 transition-opacity">
